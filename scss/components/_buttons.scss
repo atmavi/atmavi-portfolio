@@ -31,13 +31,15 @@
         }
     }
 
-    &--green {
+    &--primary {
         background-color:$color-primary;
-        color: $color-white;
+        color: $color-white !important;
+    }
 
-        &::after{
-            background-color: $color-primary;
-        }
+    &--transparent {
+        background-color:transparent;
+        color: $color-white;
+        border: 1px solid $color-white !important;
     }
     
     &--animated {
