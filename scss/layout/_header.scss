@@ -1,0 +1,59 @@
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: 
+        linear-gradient(
+            to right bottom, 
+            rgba($color-primary-light,.8),
+            rgba($color-primary-dark,.8)),
+        url(../img/bg.jpg);
+    background-size: cover;
+    background-position: top; 
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    
+
+    &__logo-box {
+        position: relative;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        height: 3.5rem;
+        color:$color-white;
+        font-size: 3rem;
+    }
+
+    &__text-box {
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    color: #efe;
+    margin-bottom: 5rem;
+    text-shadow: .1rem .1rem 1rem rgba($color-black, 0.1);
+
+    &--main {
+        display: block;
+        font-weight: 400;
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+        animation: .7s ease-out slide-to-right;
+
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+        font-weight: 700;
+        animation: .7s ease-out slide-to-left;
+    }
+}

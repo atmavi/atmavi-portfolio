@@ -1,0 +1,21 @@
+body {
+    font-family: "ubuntu", sans-serif;
+    line-height: 1.7;
+    color: $color-gray;
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: transparent;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    display: inline-block;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewX(15deg) skewY(2deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
