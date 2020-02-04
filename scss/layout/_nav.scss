@@ -4,10 +4,11 @@
     position: fixed;
     z-index: 100;
     width: 100%;
+    background-color: rgba($color-secondary-light, .6);
     
     &__logo-box {
         position: relative;
-        padding: 1rem 2em;
+        padding: 0 2em;
     }
 
     &__logo {
@@ -45,12 +46,6 @@
         &:hover::after {
             width: 100%;
         }
-
-
-        // &:hover{
-        //     background-color: rgba($color-white, .4);
-        //     color: $color-primary;
-        // }
     }
 
     &__link {
