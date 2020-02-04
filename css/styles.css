@@ -176,6 +176,18 @@ body {
 .u-padding-left-big {
   padding-left: 8rem; }
 
+.w-25 {
+  width: 25%; }
+
+.w-50 {
+  width: 25%; }
+
+.w-75 {
+  width: 25%; }
+
+.w-100 {
+  width: 25%; }
+
 .btn, .btn:visited, .btn:link {
   text-transform: uppercase;
   border-radius: 5rem;
