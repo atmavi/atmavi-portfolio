@@ -277,7 +277,7 @@ body {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: rgba(122, 252, 161, 0.6); }
+  background-color: rgba(0, 252, 235, 0.6); }
   .nav__logo-box {
     position: relative;
     padding: 0 2em; }
