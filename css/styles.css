@@ -180,13 +180,22 @@ body {
   width: 25%; }
 
 .w-50 {
-  width: 25%; }
+  width: 50%; }
 
 .w-75 {
-  width: 25%; }
+  width: 75%; }
 
 .w-100 {
-  width: 25%; }
+  width: 100%; }
+
+.d-inline-block {
+  display: inline-block; }
+
+.d-block {
+  display: block; }
+
+.d-inline {
+  display: inline; }
 
 .btn, .btn:visited, .btn:link {
   text-transform: uppercase;
