@@ -22,7 +22,6 @@
     &__list {
         list-style: none;
         display: block;
-        // width: 70%;
         float: right;
         text-align: right;
     }
@@ -30,12 +29,28 @@
         display: inline-block;
         padding: 1rem 2.5rem;
         text-align: center;
-        transition: all .2s;
+        position: relative;
 
-        &:hover{
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
             background-color: rgba($color-white, .4);
-            color: $color-primary;
+            transition: width .2s;
         }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+
+        // &:hover{
+        //     background-color: rgba($color-white, .4);
+        //     color: $color-primary;
+        // }
     }
 
     &__link {
