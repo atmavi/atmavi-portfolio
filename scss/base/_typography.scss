@@ -25,4 +25,12 @@ body {
 .paragraph {
     font-size: 1.5rem;
     display: inline-block;
+
+    &--white {
+        color: white;
+    }
+
+    &--tertiary {
+        color: white;
+    }
 }

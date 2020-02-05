@@ -67,6 +67,10 @@ body {
 .paragraph {
   font-size: 1.5rem;
   display: inline-block; }
+  .paragraph--white {
+    color: white; }
+  .paragraph--tertiary {
+    color: white; }
 
 .u-left-text {
   text-align: left; }
@@ -189,13 +193,13 @@ body {
   width: 100%; }
 
 .d-inline-block {
-  display: inline-block; }
+  display: inline-block !important; }
 
 .d-block {
-  display: block; }
+  display: block !important; }
 
 .d-inline {
-  display: inline; }
+  display: inline !important; }
 
 .btn, .btn:visited, .btn:link {
   text-transform: uppercase;
@@ -319,3 +323,32 @@ body {
   height: 50vh;
   background-color: #181616;
   color: #fff; }
+
+.footer {
+  background-color: #2e2828;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #89b92e;
+  height: 15rem; }
+  .footer a, .footer a:visited, .footer a:link {
+    text-decoration: none;
+    color: #89b92e; }
+  .footer__logo {
+    font-size: 4rem; }
+  .footer__header {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .footer__link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: .5rem 2rem; }
+  .footer__icon {
+    font-size: 4rem; }
