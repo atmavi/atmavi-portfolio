@@ -57,17 +57,19 @@
         font-size: 1.7rem;
         display: inline-block;
         padding: .5rem 2rem;
+
+        &:hover * {
+            color: lighten($color-tertiary-light, .2);
+        }
     }
 
     &__item:hover  &__icon {
-        transform: scale(1.1);
-        animation: .3s ease bounce;
+        animation: 1s ease bounce;
     }
 
 
     &__icon {
         font-size: 4rem;
-        color: $color-white;
         transition: all .3s;
     }
 
