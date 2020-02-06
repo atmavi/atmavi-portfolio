@@ -1,14 +1,17 @@
 .section-about {
     padding-top: 20rem;
     margin-top: -13rem;
-    height: 50vh;
-    background-color: $color-black-1;
-    // background-image: 
-    //     linear-gradient(
-    //         to bottom,
-    //         rgba($color-tertiary-light, .8),
-    //         rgba($color-tertiary, .8));
+    height: 90vh;
+    // background-color: $color-black-1;
+    background-image: 
+        linear-gradient(
+            to bottom,
+            rgba($color-black, .6),
+            rgba($color-black, .8));
     color: $color-white;
+    // clip-path: polygon();
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100vh,0 85vh);
+    z-index: 100;
 }
 
 

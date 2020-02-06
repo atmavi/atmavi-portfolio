@@ -14,6 +14,7 @@
     background-size: cover;
     background-position: right; 
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100%,0 85vh);
+    z-index: 900;
 
     &__text-box {
         width: 50%;

@@ -260,7 +260,8 @@ body {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(193, 243, 99, 0.8), rgba(0, 0, 0, 0.3)), url(../img/bg.jpg);
   background-size: cover;
   background-position: right;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100%, 0 85vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100%, 0 85vh);
+  z-index: 900; }
   .header__text-box {
     width: 50%;
     text-transform: uppercase;
@@ -290,7 +291,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   background-color: rgba(24, 22, 22, 0.6); }
   .nav__logo-box {
@@ -332,9 +333,11 @@ body {
 .section-about {
   padding-top: 20rem;
   margin-top: -13rem;
-  height: 50vh;
-  background-color: #181616;
-  color: #fff; }
+  height: 90vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100vh, 0 85vh);
+  z-index: 100; }
 
 .footer {
   background-color: #2e2828;
