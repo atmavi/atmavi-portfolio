@@ -31,7 +31,7 @@
     }
 
     &__logo {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     &__text {
@@ -59,8 +59,16 @@
         padding: .5rem 2rem;
     }
 
+    &__item:hover  &__icon {
+        transform: scale(1.1);
+        animation: .3s ease bounce;
+    }
+
+
     &__icon {
         font-size: 4rem;
+        color: $color-white;
+        transition: all .3s;
     }
 
 }

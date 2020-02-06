@@ -34,6 +34,17 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-1rem); }
+  25% {
+    transform: translateY(0); }
+  75% {
+    transform: translateY(-0.2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *, *::after {
   margin: 0;
   padding: 0; }
@@ -336,7 +347,7 @@ body {
     text-decoration: none;
     color: #89b92e; }
   .footer__logo {
-    font-size: 4rem; }
+    font-size: 6rem; }
   .footer__header {
     font-size: 2rem;
     text-transform: uppercase; }
@@ -350,5 +361,10 @@ body {
     font-size: 1.7rem;
     display: inline-block;
     padding: .5rem 2rem; }
+  .footer__item:hover .footer__icon {
+    transform: scale(1.1);
+    animation: .3s ease bounce; }
   .footer__icon {
-    font-size: 4rem; }
+    font-size: 4rem;
+    color: #fff;
+    transition: all .3s; }
