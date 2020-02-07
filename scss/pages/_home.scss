@@ -26,9 +26,11 @@
 
 .work {
     display: flex;
+    justify-content: space-around;
     position: relative;
     height: 100vh;
     margin-top: -24rem;
+    padding-top: 15rem;
     background-image: linear-gradient(
         $color-gray-dark,
         $color-black
@@ -43,7 +45,12 @@
     z-index: 700;
 
     &__image-box {
-        width: 70%;
+        width: 45%;
+        height: 85%;
+    }
+
+    &__details {
+        width: 45%;
         height: 85%;
     }
 }

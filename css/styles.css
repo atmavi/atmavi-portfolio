@@ -258,6 +258,35 @@ body {
   padding: 2rem;
   object-fit: cover; }
 
+.res {
+  position: relative; }
+  .res__img {
+    position: absolute;
+    transition: all .2s;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    outline-offset: 1rem;
+    border-radius: 2px; }
+    .res__img:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      z-index: 20;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      outline: 1rem solid #89b92e; }
+    .res__img--desktop {
+      width: 80%;
+      height: 33rem; }
+    .res__img--tab {
+      width: 70%;
+      height: 20rem;
+      right: 3rem;
+      top: 8rem; }
+    .res__img--phone {
+      width: 30%;
+      height: 20rem;
+      right: 0;
+      top: 15rem; }
+  .res:hover .res__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
   display: flex;
   align-items: center;
@@ -352,14 +381,19 @@ body {
 
 .work {
   display: flex;
+  justify-content: space-around;
   position: relative;
   height: 100vh;
   margin-top: -24rem;
+  padding-top: 15rem;
   background-image: linear-gradient(#3b3b3b, #000);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100vh, 0 85vh);
   z-index: 700; }
   .work__image-box {
-    width: 70%;
+    width: 45%;
+    height: 85%; }
+  .work__details {
+    width: 45%;
     height: 85%; }
 
 .footer {
