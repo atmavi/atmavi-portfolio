@@ -1,4 +1,5 @@
-.section-about {
+.about {
+    position: relative;
     padding-top: 20rem;
     margin-top: -13rem;
     height: 90vh;
@@ -8,20 +9,54 @@
             rgba($color-black-2, 1),
             rgba($color-black, 1));
     color: $color-white;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100vh,0 85vh);
-    z-index: 100;
+    clip-path: 
+        polygon(
+            0 0, 
+            100% 0, 
+            100% 85vh, 
+            50vw 100vh,
+            0 85vh);
+    z-index: 800;
+
+    &__badge-box {
+        display: flex;
+        justify-content: center;
+    }
 }
 
+.work {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    margin-top: -24rem;
+    background-image: linear-gradient(
+        $color-gray-dark,
+        $color-black
+    );
+    clip-path: 
+        polygon(
+            0 0, 
+            100% 0, 
+            100% 85vh, 
+            50vw 100vh,
+            0 85vh);
+    z-index: 700;
+
+    &__image-box {
+        width: 70%;
+        height: 85%;
+    }
+}
 
 .footer {
     background-color: $color-black-2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
     text-align: center;
     color: $color-tertiary;
     height: 50vh;
-    padding-bottom: 3rem;
+    padding: 15rem 0 3rem 0;
     margin-top: -50vh;
     z-index: 100;
 
@@ -36,11 +71,12 @@
 
     &__logo {
         font-size: 6rem;
+        margin-left: 15rem;
     }
 
-    &__text {
+    // &__text {
 
-    }
+    // }
 
     &__header {
         font-size: 2rem;
@@ -50,6 +86,7 @@
     &__link-list {
         display: flex;
         justify-content: center;
+        margin-right: 3rem;
         align-items: center;
     }
 
