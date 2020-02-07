@@ -272,7 +272,7 @@ body {
       transform: scale(1.05) translateY(-0.5rem);
       z-index: 20;
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      outline: 1rem solid #89b92e; }
+      outline: 1px solid #c1f363; }
     .res__img--desktop {
       width: 80%;
       height: 33rem; }
