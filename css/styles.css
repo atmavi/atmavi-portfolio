@@ -259,7 +259,9 @@ body {
   object-fit: cover; }
 
 .res {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%; }
   .res__img {
     position: absolute;
     transition: all .2s;
@@ -275,12 +277,12 @@ body {
       width: 80%;
       height: 33rem; }
     .res__img--tab {
-      width: 70%;
+      width: 35rem;
       height: 20rem;
       right: 3rem;
       top: 8rem; }
     .res__img--phone {
-      width: 30%;
+      width: 15rem;
       height: 20rem;
       right: 0;
       top: 15rem; }
@@ -391,7 +393,7 @@ body {
   z-index: 700; }
   .work__image-box {
     width: 45%;
-    height: 85%; }
+    height: 50rem; }
   .work__details {
     width: 45%;
     height: 85%; }
