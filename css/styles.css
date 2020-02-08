@@ -92,8 +92,7 @@ body {
 
 .paragraph {
   font-size: 1.5rem;
-  display: inline-block;
-  hyphens: auto; }
+  display: inline-block; }
   .paragraph--white {
     color: white; }
   .paragraph--tertiary {
@@ -403,19 +402,29 @@ body {
   color: #969696;
   position: relative;
   margin-top: -24rem;
-  padding-top: 15rem;
+  padding: 15rem 0;
   background-image: linear-gradient(#3b3b3b, #000);
   z-index: 700; }
   .work__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     position: relative;
-    margin: 0 5rem; }
+    padding: 6rem 0 2rem 0;
+    transition: all .2s; }
+    .work__box:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+    .work__box:nth-child(even) {
+      flex-direction: row-reverse; }
+    .work__box:not(:last-child) {
+      margin-bottom: 8rem; }
   .work__image-box {
-    width: 50%; }
+    width: 40%; }
   .work__details {
-    width: 50%; }
+    width: 40%; }
+  .work__paragraph {
+    width: auto;
+    font-size: 1.5rem; }
   .work__list {
     margin-left: 3.5rem;
     font-size: 1.5rem; }

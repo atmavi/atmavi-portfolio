@@ -29,7 +29,7 @@
     color: $color-gray-light;
     position: relative;
     margin-top: -24rem;
-    padding-top: 15rem;
+    padding: 15rem 0;
     background-image: linear-gradient(
         $color-gray-dark,
         $color-black
@@ -45,18 +45,36 @@
 
     &__box {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         position: relative;
-        margin: 0 5rem;
+        padding: 6rem 0 2rem 0;
+        transition: all .2s;
+
+        &:hover {
+            background-color: rgba($color-black, .2);
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8rem;
+        }
     }
 
     &__image-box {
-        width: 50%;
+        width: 40%;
     }
 
     &__details {
-        width: 50%;
+        width: 40%;
+    }
+
+    &__paragraph {
+        width: auto;
+        font-size: 1.5rem;
     }
 
     &__list {
