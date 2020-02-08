@@ -15,11 +15,26 @@ body {
     letter-spacing: .2rem;
     display: inline-block;
     transition: all .2s;
+    margin-bottom: 1.5rem;
 
     &:hover {
         transform: scale(1.1);
         text-shadow: 0 .2rem .5rem rgba($color-black, .1);
     }
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    font-weight: 400;
+    color: transparent;
+    background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    display: inline-block;
+    transition: all .2s;
+    margin-bottom: 1rem;
 }
 
 .paragraph {
@@ -31,6 +46,10 @@ body {
     }
 
     &--tertiary {
-        color: white;
+        color: $color-tertiary;
+    }
+
+    &--gray-light {
+        color: $color-gray-light;
     }
 }
