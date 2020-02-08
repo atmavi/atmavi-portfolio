@@ -29,18 +29,11 @@
     color: $color-gray-light;
     position: relative;
     margin-top: -24rem;
-    padding: 15rem 0;
+    padding: 15rem 0 10rem 0;
     background-image: linear-gradient(
         $color-gray-dark,
         $color-black
     );
-    // clip-path: 
-    //     polygon(
-    //         0 0, 
-    //         100% 0, 
-    //         100% 85vh, 
-    //         50vw 100vh,
-    //         0 85vh);
     z-index: 700;
 
     &__box {
@@ -48,7 +41,7 @@
         justify-content: space-around;
         width: 100%;
         position: relative;
-        padding: 6rem 0 2rem 0;
+        padding: 3rem 0 2rem 0;
         transition: all .2s;
 
         &:hover {
@@ -80,6 +73,35 @@
     &__list {
         margin-left: 3.5rem;
         font-size: 1.5rem;
+    }
+
+    &__icon-box {
+        width: 50%;
+        padding: 2rem 0;
+
+        & a {
+            &, &:visited, &:link {
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                display: inline-block;
+                color: $color-tertiary;
+                transition: all .2s;
+
+                &:not(:first-child) {
+                    margin-left: 2rem;
+                }
+
+                &:hover {
+                    color: $color-tertiary-light;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 3rem;
     }
 }
 
