@@ -25,8 +25,7 @@
 }
 
 .work {
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
     color: $color-gray-light;
     position: relative;
     margin-top: -24rem;
@@ -35,23 +34,29 @@
         $color-gray-dark,
         $color-black
     );
-    clip-path: 
-        polygon(
-            0 0, 
-            100% 0, 
-            100% 85vh, 
-            50vw 100vh,
-            0 85vh);
+    // clip-path: 
+    //     polygon(
+    //         0 0, 
+    //         100% 0, 
+    //         100% 85vh, 
+    //         50vw 100vh,
+    //         0 85vh);
     z-index: 700;
 
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        margin: 0 5rem;
+    }
+
     &__image-box {
-        width: 45%;
-        height: 50rem;
+        width: 50%;
     }
 
     &__details {
-        width: 45%;
-        height: 85%;
+        width: 50%;
     }
 
     &__list {

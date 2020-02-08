@@ -92,7 +92,8 @@ body {
 
 .paragraph {
   font-size: 1.5rem;
-  display: inline-block; }
+  display: inline-block;
+  hyphens: auto; }
   .paragraph--white {
     color: white; }
   .paragraph--tertiary {
@@ -398,21 +399,23 @@ body {
     justify-content: center; }
 
 .work {
-  display: flex;
-  justify-content: space-around;
+  align-items: center;
   color: #969696;
   position: relative;
   margin-top: -24rem;
   padding-top: 15rem;
   background-image: linear-gradient(#3b3b3b, #000);
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50vw 100vh, 0 85vh);
   z-index: 700; }
+  .work__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin: 0 5rem; }
   .work__image-box {
-    width: 45%;
-    height: 50rem; }
+    width: 50%; }
   .work__details {
-    width: 45%;
-    height: 85%; }
+    width: 50%; }
   .work__list {
     margin-left: 3.5rem;
     font-size: 1.5rem; }
