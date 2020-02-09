@@ -312,12 +312,18 @@ body {
       height: 33rem; }
       @media (max-width: 675px) {
         .res__img--desktop {
-          height: 25rem; } }
+          height: 25rem;
+          width: 90%; } }
     .res__img--tab {
       width: 35rem;
       height: 20rem;
       right: 3rem;
       top: 8rem; }
+      @media (max-width: 900px) {
+        .res__img--tab {
+          width: 30rem;
+          top: 10rem;
+          right: 1rem; } }
       @media (max-width: 675px) {
         .res__img--tab {
           width: 30rem;

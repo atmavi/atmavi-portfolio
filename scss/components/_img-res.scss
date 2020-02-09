@@ -28,6 +28,7 @@
 
             @include respond(tab-port) {
                 height: 25rem;
+                width: 90%;
             }
         }
 
@@ -36,6 +37,12 @@
             height: 20rem;
             right: 3rem;
             top: 8rem;
+
+            @include respond(tab-lan) {
+                width: 30rem;
+                top: 10rem;
+                right: 1rem;
+            }
 
             @include respond(tab-port) {
                 width: 30rem;
