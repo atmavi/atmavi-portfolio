@@ -2,9 +2,16 @@
     &__img {
         border-radius: 50%;
         width: 10rem;
-        height: 10rem;
         padding: 2rem;
         object-fit: cover;
+
+        @include respond(tab-lan) {
+            width: 8rem;
+        }
+
+        @include respond(mobile) {
+            width: 6rem;
+        }
     }
 }
 

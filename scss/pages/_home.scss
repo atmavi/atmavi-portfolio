@@ -9,6 +9,7 @@
             rgba($color-black-2, 1),
             rgba($color-black, 1));
     color: $color-white;
+    z-index: 800;
     clip-path: 
         polygon(
             0 0, 
@@ -16,7 +17,17 @@
             100% 85vh, 
             50vw 100vh,
             0 85vh);
-    z-index: 800;
+
+    @include respond(tab-lan) {
+        clip-path: 
+        polygon(
+            0 0, 
+            100% 0, 
+            100% 70vh, 
+            50vw 85vh,
+            0 70vh);
+    }
+    
 
     &__badge-box {
         display: flex;
@@ -30,11 +41,15 @@
     position: relative;
     margin-top: -24rem;
     padding: 15rem 0 10rem 0;
+    z-index: 700;
     background-image: linear-gradient(
         $color-gray-dark,
         $color-black
     );
-    z-index: 700;
+
+    @include respond(tab-lan) {
+        margin-top: -41rem;
+    }
 
     &__box {
         display: flex;
@@ -112,10 +127,14 @@
     align-items: flex-end;
     text-align: center;
     color: $color-tertiary;
-    height: 50vh;
-    padding: 15rem 3rem 3rem 3rem;
-    margin-top: -50vh;
+    padding: 3rem;
     z-index: 100;
+
+    @include respond(tab-lan) {
+        display: block;
+        margin-top: 0;
+        padding: 3rem;
+    }
 
     & a{
         &,
@@ -128,12 +147,21 @@
 
     &__logo {
         font-size: 6rem;
-        // margin-left: 15rem;
+
+        @include respond(tab-lan) {
+            display: block;
+        }
     }
 
-    // &__text {
+    &__text {
 
-    // }
+        @include respond(tab-lan) {
+            border-top: 1px solid $color-tertiary-light;
+            margin-bottom: 2rem;
+            padding-top: 2rem;
+        }
+
+    }
 
     &__header {
         font-size: 2rem;
@@ -143,7 +171,6 @@
     &__link-list {
         display: flex;
         justify-content: center;
-        // margin-right: 3rem;
         align-items: center;
     }
 
