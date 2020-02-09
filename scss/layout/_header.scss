@@ -39,6 +39,10 @@
         letter-spacing: 3.5rem;
         animation: .7s ease-out slide-to-right;
 
+        @include respond(tab-port) {
+            letter-spacing: 0;
+            font-size: 6rem;
+        }
     }
     
     &--sub {
@@ -48,5 +52,10 @@
         letter-spacing: 1.1rem;
         font-weight: 400;
         animation: .7s ease-out slide-to-left;
+
+        @include respond(tab-port) {
+            letter-spacing: 0;
+            font-size: 2.3rem;
+        }
     }
 }

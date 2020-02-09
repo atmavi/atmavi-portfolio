@@ -1,0 +1,17 @@
+@mixin respond($dvc) {
+    @if $dvc== mobile {
+        @media (max-width:480px) { @content }
+    }
+
+    @else if $dvc== tab-port {
+        @media (max-width:675px) { @content }
+    }
+
+    @else if $dvc== tab-lan {
+        @media (max-width:900px) { @content }
+    }
+
+    @else if $dvc== big-desktop {
+        @media (min-width:1800px) { @content }
+    }
+}
