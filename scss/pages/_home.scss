@@ -18,15 +18,15 @@
             50vw 100vh,
             0 85vh);
 
-    @include respond(tab-lan) {
-        clip-path: 
-        polygon(
-            0 0, 
-            100% 0, 
-            100% 70vh, 
-            50vw 85vh,
-            0 70vh);
-    }
+    // @include respond(tab-lan) {
+    //     clip-path: 
+    //     polygon(
+    //         0 0, 
+    //         100% 0, 
+    //         100% 70vh, 
+    //         50vw 85vh,
+    //         0 70vh);
+    // }
     
 
     &__badge-box {
@@ -48,7 +48,8 @@
     );
 
     @include respond(tab-lan) {
-        margin-top: -41rem;
+        // margin-top: -41rem;
+        padding: 20rem 0 10rem 0;
     }
 
     &__box {
@@ -58,6 +59,11 @@
         position: relative;
         padding: 3rem 0 2rem 0;
         transition: all .2s;
+
+        @include respond(tab-port) {
+            display: block;
+        }
+
 
         &:hover {
             background-color: rgba($color-black, .2);
@@ -74,10 +80,23 @@
 
     &__image-box {
         width: 40%;
+
+        @include respond(tab-port) {
+            display: block;
+            height: 40vh;
+            width: 60%;
+            margin: 0 auto;
+        }
     }
 
     &__details {
         width: 40%;
+
+        @include respond(tab-port) {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     &__paragraph {
