@@ -399,6 +399,9 @@ body {
     color: #fff;
     font-size: 3rem;
     text-decoration: none; }
+    @media (max-width: 480px) {
+      .nav__logo, .nav__logo:link, .nav__logo:visited {
+        display: none; } }
   .nav__list {
     list-style: none;
     display: block;

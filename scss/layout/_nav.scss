@@ -18,6 +18,10 @@
             color:$color-white;
             font-size: 3rem;
             text-decoration: none;
+
+            @include respond(mobile) {
+                display: none;
+            }
         }
     }
 
