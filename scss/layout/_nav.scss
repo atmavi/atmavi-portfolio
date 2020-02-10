@@ -29,9 +29,10 @@
     }
     &__item {
         display: inline-block;
-        padding: 1rem 2.5rem;
+        // padding: 1rem 2.5rem;
         text-align: center;
         position: relative;
+        cursor: pointer;
 
         &::after {
             position: absolute;
@@ -42,6 +43,7 @@
             left: 0;
             background-color: rgba($color-white, .4);
             transition: width .2s;
+            z-index: -1;
         }
 
         &:hover::after {
@@ -58,6 +60,7 @@
             display: inline-block;
             color: $color-white;
             font-size: 1.50rem;
+            padding: 1rem 2.5rem;
         }
 
     }

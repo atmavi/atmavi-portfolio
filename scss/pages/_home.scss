@@ -17,18 +17,7 @@
             100% 85vh, 
             50vw 100vh,
             0 85vh);
-
-    // @include respond(tab-lan) {
-    //     clip-path: 
-    //     polygon(
-    //         0 0, 
-    //         100% 0, 
-    //         100% 70vh, 
-    //         50vw 85vh,
-    //         0 70vh);
-    // }
     
-
     &__badge-box {
         display: flex;
         justify-content: center;
