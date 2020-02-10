@@ -407,6 +407,10 @@ body {
     display: block;
     float: right;
     text-align: right; }
+    @media (max-width: 480px) {
+      .nav__list {
+        width: 100%;
+        text-align: center; } }
   .nav__item {
     display: inline-block;
     text-align: center;
