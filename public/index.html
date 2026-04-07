@@ -1,89 +1,198 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.11.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.11.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.11.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/d7df108e96.js" crossorigin="anonymous"></script>
+    <title>Atmavi</title>
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <nav class="nav">
+        <div class="nav__logo-box">
+            <a href="#" class="nav__logo">Atmavi</a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary u-margin-bottom-big">
+                <span class="heading-primary--main u-margin-bottom-medium">Atmavi</span>
+                <span class="heading-primary--sub">Hi I'm Marck Atanante</span>
+            </h1>
+            <div class="header__btn-box">
+                <a href="#work" class="btn btn--white btn--animated">My Portfolio</a>
+                <!-- <a href="#" class="btn btn--transparent btn--animated">My Skills</a> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div class="about__box u-center-text">
+                <h2 class="heading-secondary d-block u-margin-bottom-medium">About</h2>
+                <p class="paragraph w-50 u-margin-bottom-medium">
+                    I am a javascript specialist and have built apps with different technologies. I am continously
+                    researching and learning new skills and tools for web development.
+                </p>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                <div class="about__badge-box">
+                    <img src="./img/mongodb.png" alt="" class="badge__img">
+                    <img src="./img/express.png" alt="" class="badge__img">
+                    <img src="./img/react.png" alt="" class="badge__img">
+                    <img src="./img/node.png" alt="" class="badge__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="work__box">
+                <div class="work__image-box">
+                    <div class="res">
+                        <img src="./img/campon-desktop.jpg" alt="img" class="res__img res__img--desktop">
+                        <img src="./img/campon-tab.png" alt="img" class="res__img res__img--tab">
+                        <img src="./img/campon-mobile.png" alt="img" class="res__img res__img--phone">
+                    </div>
+                </div>
+                <div class="work__details">
+                    <h2 class="heading-secondary">CampOn</h2>
+                    <p class="paragraph u-margin-bottom-small">
+                        A landing page created for hiking tour agency. I made with Tailwindcss to learn other CSS
+                        frameworks and not just the famous Bootstrap CSS.
+                    </p>
+
+                    <h3 class="heading-tertiary">Remarkable features</h3>
+                    <ul class="work__list">
+                        <li class="work__item">Made with Tailwindcss</li>
+                        <li class="work__item">Responsive web design</li>
+                        <li class="work__item">Reusable codes</li>
+                    </ul>
+
+                    <div class="work__icon-box">
+                        <a href="https://atmavi.github.io/Campon/" target="_blank">
+                            <i class="far fa-eye work__icon d-block"></i>Demo
+                        </a>
+                        <a href="https://github.com/atmavi/Campon" target="_blank">
+                            <i class="fab fa-github work__icon d-block"></i>Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__box">
+                <div class="work__image-box">
+                    <div class="res">
+                        <img src="./img/port-desk.png" alt="img" class="res__img res__img--desktop">
+                        <img src="./img/tab-port.png" alt="img" class="res__img res__img--tab">
+                        <img src="./img/mobile-port.png" alt="img" class="res__img res__img--phone">
+                    </div>
+                </div>
+                <div class="work__details">
+                    <h2 class="heading-secondary">Portfolio</h2>
+                    <p class="paragraph u-margin-bottom-small">A project made to showcase my skills on front-end web
+                        development. This was made with pure CSS and didn't depend on any CSS framework. This project
+                        really improved my skills in web design.</p>
+
+                    <h3 class="heading-tertiary">Remarkable features</h3>
+                    <ul class="work__list">
+                        <li class="work__item">Made with pure CSS</li>
+                        <li class="work__item">Responsive web design</li>
+                        <li class="work__item">Built with reusable codes</li>
+                    </ul>
+
+                    <div class="work__icon-box">
+                        <a href="https://atmavi.github.io/atmavi-portfolio/" target="_blank">
+                            <i class="far fa-eye work__icon d-block"></i>Demo
+                        </a>
+                        <a href="https://github.com/atmavi/atmavi-portfolio" target="_blank">
+                            <i class="fab fa-github work__icon d-block"></i>Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__box">
+                <div class="work__image-box">
+                    <div class="res">
+                        <img src="./img/plarmy-desk.png" alt="img" class="res__img res__img--desktop">
+                        <img src="./img/plarmy-tab.png" alt="img" class="res__img res__img--tab">
+                        <img src="./img/plarmy-mobile.png" alt="img" class="res__img res__img--phone">
+                    </div>
+                </div>
+                <div class="work__details">
+                    <h2 class="heading-secondary">Plarmy (WIP)</h2>
+                    <p class="paragraph u-margin-bottom-small">
+                        An e-commerce website created with MERN stack(MongoDB, Express, React.js, Node.js).
+                        This enables farmers and others to sell their products online and allowing consumers to order
+                        the freshest foods they can have.
+                    </p>
+
+                    <h3 class="heading-tertiary">Remarkable features</h3>
+                    <ul class="work__list">
+                        <li class="work__item">Created with React</li>
+                        <li class="work__item">Responsive web design</li>
+                        <li class="work__item">Good file architecture</li>
+                    </ul>
+
+                    <div class="work__icon-box">
+                        <a href="https://github.com/atmavi/Plarmy" target="_blank">
+                            <i class="fab fa-github work__icon d-block"></i>Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__logo">
+            <a href="#">Atmavi</a>
+        </div>
+
+        <div class="footer__text" id="contact">
+            <h3 class="footer__header">
+                Want to hire me?
+            </h3>
+            <p class="paragraph w-100">
+                <a href="https://mail.google.com/" target="_blank">atmavi0001@gmail.com</a>
+            </p>
+            <p class="paragraph w-100">+639564732583</p>
+        </div>
+
+        <div class="footer__link-list">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://www.linkedin.com/in/marck-atanante/" target="_blank">
+                        <i class="fab fa-linkedin footer__icon d-block"></i>
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="footer__item">
+
+                    <a href="https://github.com/atmavi">
+                        <i class="fab fa-github footer__icon d-block"></i>
+                        Github
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://www.messenger.com/t/vincent.atanante" target="_blank">
+                        <i class="fab fa-facebook-messenger footer__icon d-block"></i>
+                        Messenger
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
 </html>
