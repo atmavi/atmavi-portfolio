@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:compile":"node-sass scss/main.scss css/styles.css -w"
+    "sass:compile": "node-sass scss/main.scss public/css/styles.css -w",
+    "copy:html": "copy index.html public\\index.html",
+    "copy:img": "xcopy img public\\img /E /I /Y",
+    "build": "npm run copy:html && npm run copy:img && node-sass scss/main.scss public/css/styles.css"
   },
   "author": "",
   "license": "ISC",
