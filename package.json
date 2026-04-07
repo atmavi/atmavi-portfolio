@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:compile": "node-sass scss/main.scss public/css/styles.css -w",
-    "copy:html": "copy index.html public\\index.html",
-    "copy:img": "xcopy img public\\img /E /I /Y",
-    "build": "npm run copy:html && npm run copy:img && node-sass scss/main.scss public/css/styles.css"
+    "copy:html": "shx cp src/index.html public/index.html",
+    "copy:assets": "shx cp -r src/img public/",
+    "sass:compile": "sass src/scss/main.scss public/css/styles.css -w",
+    "build": "npm run copy:html && npm run copy:assets && sass src/scss/main.scss public/css/styles.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.99.0"
+    "sass": "^1.99.0",
+    "shx": "^0.4.0"
   }
 }
